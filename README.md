@@ -1,7 +1,6 @@
 
 ---
-#  Comprehensive Python Cheatsheet
-- This is a comprehesive guide based on the official [Python Documentation](https://docs.python.org/3/library/index.html)
+#  Comprehensive Core Python Cheatsheet
 ---
 
 <sup>[Download Full Text](https://github.com/uptimistic/ComputerProgramming/blob/main/DefinitivePythonCheatsheet.md), [Fork me on GitHub](https://github.com/uptimistic/ComputerProgramming) , [Connect via LinkedIn](https://www.linkedin.com/in/kwadwoadutwum/), [Connect via Columbia University Email](mailto:ka2526@columbia.edu), [Donate or Buy Coffee](https://ko-fi.com/optimistic)
@@ -14,41 +13,42 @@
   <img width="700" height="208" src="https://github.com/uptimistic/ComputerProgramming/blob/main/Python.png">
 </p>
 
----
-Contents
---------
-**&nbsp;&nbsp;&nbsp;** ** Table of Contents :** **&nbsp;** 	**[`0 : Introduction`](#Introduction)**__,__ 	**[`1 : Built-in Functions`](#Built-inFunctions)**__,__ 	**[`2 : Built-in Constants`](#Built-inConstants)**__,__ 	**[`3 : Built-in Types`](#Built-inTypes)**__,__ 	**[`4 : Built-in Exceptions`](#Built-inExceptions)**__,__ 	**[`5 : Text Processing Services`](#TextProcessingServices)**__,__ 	**[`6 : Binary Data Services`](#BinaryDataServices)**__,__ 	**[`7 : Data Types`](#DataTypes)**__,__ 	**[`8 : Numeric and Mathematical Modules`](#NumericandMathematicalModules)**__,__ 	**[`9 : Functional Programming Modules`](#FunctionalProgrammingModules)**__,__ 	**[`10 : File and Directory Access`](#FileandDirectoryAccess)**__,__ 	**[`11 : Data Persistence`](#DataPersistence)**__,__ 	**[`12 : Data Compression and Archiving`](#DataCompressionandArchiving)**__,__ 	**[`13 : File Formats`](#FileFormats)**__,__ 	**[`14 : Cryptographic Services`](#CryptographicServices)**__,__ 	**[`15 : Generic Operating System Services`](#GenericOperatingSystemServices)**__,__ 	**[`16 : Concurrent Execution`](#ConcurrentExecution)**__,__ 	**[`17 : Networking and Interprocess Communication`](#NetworkingandInterprocessCommunication)**__,__ 	**[`18 : Internet Data Handling`](#InternetDataHandling)**__,__ 	**[`19 : Structured Markup Processing Tools`](#StructuredMarkupProcessingTools)**__,__ 	**[`20 : Internet Protocols and Support`](#InternetProtocolsandSupport)**__,__ 	**[`21 : Multimedia Services`](#MultimediaServices)**__,__ 	**[`22 : Internationalization`](#Internationalization)**__,__ 	**[`23 : Program Frameworks`](#ProgramFrameworks)**__,__ 	**[`24 : Graphical User Interfaces with Tk`](#GraphicalUserInterfaceswithTk)**__,__ 	**[`25 : Development Tools`](#DevelopmentTools)**__,__ 	**[`26 : Debugging and Profiling`](#DebuggingandProfiling)**__,__ 	**[`27 : Software Packaging and Distribution`](#SoftwarePackagingandDistribution)**__,__ 	**[`28 : Python Runtime Services`](#PythonRuntimeServices)**__,__ 	**[`29 : Custom Python Interpreters`](#CustomPythonInterpreters)**__,__ 	**[`30 : Importing Modules`](#ImportingModules)**__,__ 	**[`31 : Python Language Services`](#PythonLanguageServices)**__,__ 	**[`32 : MS Windows Specific Services`](#MSWindowsSpecificServices)**__,__ 	**[`33 : Unix Specific Services`](#UnixSpecificServices)**__,__ 	**[`34 : Superseded Modules`](#SupersededModules)**__,__ 	**[`35 : Security Considerations`](#SecurityConsiderations)**__.__ 
+----------
+# Contents
+----------
+**&nbsp;&nbsp;&nbsp;** Table of Contents : **&nbsp;** 	**[`0 : Introduction`](#Introduction)**__,__ 	**[`1 : Built-in Functions`](#Built-inFunctions)**__,__ 	**[`2 : Built-in Constants`](#Built-inConstants)**__,__ 	**[`3 : Built-in Types`](#Built-inTypes)**__,__ 	**[`4 : Built-in Exceptions`](#Built-inExceptions)**__,__ 	**[`5 : Text Processing Services`](#TextProcessingServices)**__,__ 	**[`6 : Binary Data Services`](#BinaryDataServices)**__,__ 	**[`7 : Data Types`](#DataTypes)**__,__ 	**[`8 : Numeric and Mathematical Modules`](#NumericandMathematicalModules)**__,__ 	**[`9 : Functional Programming Modules`](#FunctionalProgrammingModules)**__,__ 	**[`10 : File and Directory Access`](#FileandDirectoryAccess)**__,__ 	**[`11 : Data Persistence`](#DataPersistence)**__,__ 	**[`12 : Data Compression and Archiving`](#DataCompressionandArchiving)**__,__ 	**[`13 : File Formats`](#FileFormats)**__,__ 	**[`14 : Cryptographic Services`](#CryptographicServices)**__,__ 	**[`15 : Generic Operating System Services`](#GenericOperatingSystemServices)**__,__ 	**[`16 : Concurrent Execution`](#ConcurrentExecution)**__,__ 	**[`17 : Networking and Interprocess Communication`](#NetworkingandInterprocessCommunication)**__,__ 	**[`18 : Internet Data Handling`](#InternetDataHandling)**__,__ 	**[`19 : Structured Markup Processing Tools`](#StructuredMarkupProcessingTools)**__,__ 	**[`20 : Internet Protocols and Support`](#InternetProtocolsandSupport)**__,__ 	**[`21 : Multimedia Services`](#MultimediaServices)**__,__ 	**[`22 : Internationalization`](#Internationalization)**__,__ 	**[`23 : Program Frameworks`](#ProgramFrameworks)**__,__ 	**[`24 : Graphical User Interfaces with Tk`](#GraphicalUserInterfaceswithTk)**__,__ 	**[`25 : Development Tools`](#DevelopmentTools)**__,__ 	**[`26 : Debugging and Profiling`](#DebuggingandProfiling)**__,__ 	**[`27 : Software Packaging and Distribution`](#SoftwarePackagingandDistribution)**__,__ 	**[`28 : Python Runtime Services`](#PythonRuntimeServices)**__,__ 	**[`29 : Custom Python Interpreters`](#CustomPythonInterpreters)**__,__ 	**[`30 : Importing Modules`](#ImportingModules)**__,__ 	**[`31 : Python Language Services`](#PythonLanguageServices)**__,__ 	**[`32 : MS Windows Specific Services`](#MSWindowsSpecificServices)**__,__ 	**[`33 : Unix Specific Services`](#UnixSpecificServices)**__,__ 	**[`34 : Superseded Modules`](#SupersededModules)**__,__ 	**[`35 : Security Considerations`](#SecurityConsiderations)**__.__ 
 
----
----
+# 0 : Introduction
+----------------
+This is a comprehesive cheatsheet based on the official [Python Standard Library](https://docs.python.org/3/library/index.html).
+The aim is to offer users practical example implementation 
 
-| A             | D           | I            | O          | S              |
-|---------------|-------------|--------------|------------|----------------|
-| abs()         | delattr()   | id()         | object()   | set()          |
-| aiter()       | dict()      | input()      | oct()      | setattr()      |
-| all()         | dir()       | int()        | open()     | slice()        |
-| any()         | divmod()    | isinstance() | ord()      | sorted()       |
-| anext()       |             | issubclass() |            | staticmethod() |
-| ascii()       |             | iter()       |            | str()          |
-|               |             |              |            | sum()          |
-|               |             |              |            | super()        |
-|               |             |              |            |                |
-| B             | E           | L            | P          | T              |
-| bin()         | enumerate() | len()        | pow()      | tuple()        |
-| bool()        | eval()      | list()       | print()    | type()         |
-| breakpoint()  | exec()      | locals()     | property() |                |
-| bytearray()   |             |              |            |                |
-| bytes()       |             |              |            |                |
-|               |             |              |            |                |
-| C             | F           | M            | R          | V              |
-| callable()    | filter()    | map()        | range()    | vars()         |
-| chr()         | float()     | max()        | repr()     |                |
-| classmethod() | format()    | memoryview() | reversed() | Z              |
-| compile()     | frozenset() | min()        | round()    | zip()          |
-| complex()     |             |              |            |                |
-|               | G           | N            |            |                |
-|               | getattr()   | next()       |            |                |
-|               | globals()   |
+
+# 1 : Built-in Functions
+----------------------
+
+| A                   | D                 | I                  | O                | S                    |
+|---------------------|-------------------|--------------------|------------------|----------------------|
+| ```abs()```         | ```delattr()```   | ```id()```         | ```object()```   | ```set()```          |
+| ```aiter()```       | ```dict()```      | ```input()```      | ```oct()```      | ```setattr()```      |
+| ```all()```         | ```dir()```       | ```int()```        | ```open()```     | ```slice()```        |
+| ```any()```         | ```divmod()```    | ```isinstance()``` | ```ord()```      | ```sorted()```       |
+| ```anext()```       | E                 | ```issubclass()``` | P                | ```staticmethod()``` |
+| ```ascii()```       | ```enumerate()``` | ```iter()```       | ```pow()```      | ```str()```          |
+| B                   | ```eval()```      | L                  | ```print()```    | ```sum()```          |
+| ```bin()```         | ```exec()```      | ```len()```        | ```property()``` | ```super()```        |
+| ```bool()```        | F                 | ```list()```       | R                | T                    |
+| ```breakpoint()```  | ```filter()```    | ```locals()```     | ```range()```    | ```tuple()```        |
+| ```bytearray()```   | ```float()```     | M                  | ```repr()```     | ```type()```         |
+| ```bytes()```       | ```format()```    | ```map()```        | ```reversed()``` | ---                  |
+| C                   | ```frozenset()``` | ```max()```        | ```round()```    | ```__import__()```   |
+| ```callable()```    | G                 | ```memoryview()``` | V                |                      |
+| ```chr()```         | ```getattr()```   | ```min()```        | ```vars()```     |                      |
+| ```classmethod()``` | ```globals()```   | N                  | Z                |                      |
+| ```compile()```     |                   | ```next()```       | ```zip()```      |                      |
+| ```complex()```     |
+
+
 
 ___
 # abs()
