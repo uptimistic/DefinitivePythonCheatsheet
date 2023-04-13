@@ -64,7 +64,8 @@ need of the use of an import statement to invoke librarie(s)
 ___
 abs() fucntion implementation
 ---
-<table>
+
+<table border="2">	
   <tr>
     <th>#</th>
     <th>Use Case</th>
@@ -73,85 +74,154 @@ abs() fucntion implementation
   <tr>
     <td>1</td>
     <td>Find the absolute value of a given number</td>
-    <td><pre>num = -10
+    <td>
+
+```python  
+
+num = -10
 abs_num = abs(num)
-print(abs_num) # Output: 10</pre></td>
+print(abs_num) # Output: 10
+
+```
+</td>
   </tr>
   <tr>
     <td>2</td>
     <td>Calculate the distance between two numbers on a number line</td>
-    <td><pre>num1 = 10
+       <td>
+
+```python  
+
+num1 = 10
 num2 = 20
 distance = abs(num1 - num2)
-print(distance) # Output: 10</pre></td>
+print(distance) # Output: 10
+
+```
+</td>
   </tr>
   <tr>
     <td>3</td>
     <td>Determine the magnitude or amplitude of a vector in physics</td>
-    <td><pre>import cmath
+       <td>
+
+```python  
+
+import cmath
 vector = 3 + 4j
 magnitude = abs(vector)
 print(magnitude) # Output: 5.0</pre></td>
 
+```
+</td>
   </tr>
   <tr>
     <td>4</td>
-    <td>Calculate the difference between two values without considering their signs</td>
-    <td><pre>a = 20
+    <td>Determine the magnitude or amplitude of a vector in physics</td>
+       <td>
+
+
+```python  
+
+a = 20
 b = -30
 difference = abs(a - b)
-print(difference) # Output: 50</pre></td>
+print(difference) # Output: 50
+
+```
+</td>
   </tr>
   <tr>
     <td>5</td>
     <td>Normalize data by converting negative values to positive values</td>
-    <td><pre>data = [1, -2, 3, -4, 5]
+       <td>
+
+```python  
+
+data = [1, -2, 3, -4, 5]
 normalized_data = [abs(x) for x in data]
-print(normalized_data) # Output: [1, 2, 3, 4, 5]</pre></td>
+print(normalized_data) # Output: [1, 2, 3, 4, 5]
+
+```
+</td>
   </tr>
   <tr>
     <td>6</td>
     <td>Calculate the modulus or remainder of a number without considering its sign</td>
-    <td><pre>num = -10
+       <td>
+
+```python  
+
+num = -10
 divisor = 3
 modulus = abs(num) % divisor
-print(modulus) # Output: 1</pre></td>
+print(modulus) # Output: 1
+
+```
+</td>
   </tr>
   <tr>
     <td>7</td>
     <td>Convert a complex number to its magnitude or modulus</td>
-    <td><pre>complex_num = 2 + 3j
+       <td>
+
+```python  
+
+complex_num = 2 + 3j
 magnitude = abs(complex_num)
-print(magnitude) # Output: 3.605551275463989</pre></td>
+print(magnitude) # Output: 3.605551275463989
+
+```
+</td>
   </tr>
   <tr>
     <td>8</td>
     <td>Determine the error or deviation of a measurement from its true value</td>
-    <td><pre>measurement = 10
+       <td>
+
+```python  
+
+measurement = 10
 true_value = 15
 error = abs(measurement - true_value)
-print(error) # Output: 5</pre></td>
+print(error) # Output: 5
+
+```
+</td>
   </tr>
   <tr>
     <td>9</td>
     <td>Calculate the absolute difference between two sets of data</td>
-    <td><pre>set1 = {1, 2, 3}
+       <td>
+
+```python  
+
+set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 difference = abs(len(set1) - len(set2))
-print(difference) # Output: 2</pre></td>
+print(difference) # Output: 2
+
+```
+</td>
   </tr>
   <tr>
     <td>10</td>
     <td>Evaluate mathematical expressions involving absolute values, such as inequalities or distance formulas</td>
-    <td><pre>a = 10
+       <td>
+
+```python  
+
+a = 10
 b = 20
 if abs(a - b) >= 5:
     print("The absolute difference between a and b is greater than or equal to 5")
 else:
-    print("The absolute difference between a and b is less than 5")</pre></td>
+    print("The absolute difference between a and b is less than 5")
+ ```   
+</td>
   </tr>
 </table>
-  
+
 ---
 
 
