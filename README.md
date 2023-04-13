@@ -124,7 +124,9 @@ Contents
 **&nbsp;&nbsp;&nbsp;** **34. Superseded Modules:** **&nbsp;** 	**[`aifc — Read and write AIFF and AIFC files`](#aifc—ReadandwriteAIFFandAIFCfiles)**__,__ 	**[`asynchat — Asynchronous socket command/response handler`](#asynchat—Asynchronoussocketcommand/responsehandler)**__,__ 	**[`asyncore — Asynchronous socket handler`](#asyncore—Asynchronoussockethandler)**__,__ 	**[`audioop — Manipulate raw audio data`](#audioop—Manipulaterawaudiodata)**__,__ 	**[`cgi — Common Gateway Interface support`](#cgi—CommonGatewayInterfacesupport)**__,__ 	**[`cgitb — Traceback manager for CGI scripts`](#cgitb—TracebackmanagerforCGIscripts)**__,__ 	**[`chunk — Read IFF chunked data`](#chunk—ReadIFFchunkeddata)**__,__ 	**[`crypt — Function to check Unix passwords`](#crypt—FunctiontocheckUnixpasswords)**__,__ 	**[`imghdr — Determine the type of an image`](#imghdr—Determinethetypeofanimage)**__,__ 	**[`imp — Access the import internals`](#imp—Accesstheimportinternals)**__,__ 	**[`mailcap — Mailcap file handling`](#mailcap—Mailcapfilehandling)**__,__ 	**[`msilib — Read and write Microsoft Installer files`](#msilib—ReadandwriteMicrosoftInstallerfiles)**__,__ 	**[`nis — Interface to Sun’s NIS (Yellow Pages)`](#nis—InterfacetoSun’sNIS(YellowPages))**__,__ 	**[`nntplib — NNTP protocol client`](#nntplib—NNTPprotocolclient)**__,__ 	**[`optparse — Parser for command line options`](#optparse—Parserforcommandlineoptions)**__,__ 	**[`ossaudiodev — Access to OSS-compatible audio devices`](#ossaudiodev—AccesstoOSS-compatibleaudiodevices)**__,__ 	**[`pipes — Interface to shell pipelines`](#pipes—Interfacetoshellpipelines)**__,__ 	**[`smtpd — SMTP Server`](#smtpd—SMTPServer)**__,__ 	**[`sndhdr — Determine type of sound file`](#sndhdr—Determinetypeofsoundfile)**__,__ 	**[`spwd — The shadow password database`](#spwd—Theshadowpassworddatabase)**__,__ 	**[`sunau — Read and write Sun AU files`](#sunau—ReadandwriteSunAUfiles)**__,__ 	**[`telnetlib — Telnet client`](#telnetlib—Telnetclient)**__,__ 	**[`uu — Encode and decode uuencode files`](#uu—Encodeanddecodeuuencodefiles)**__,__ 	**[`xdrlib — Encode and decode XDR data`](#xdrlib—EncodeanddecodeXDRdata)**__.__ 
 
 
-**&nbsp;&nbsp;&nbsp;** **35. Security Considerations:** **&nbsp;** 																																																																						
+**&nbsp;&nbsp;&nbsp;** **35. Security Considerations:** **&nbsp;** 																														
+---
+---
 
 | A             | D           | I            | O          | S              |
 |---------------|-------------|--------------|------------|----------------|
@@ -154,19 +156,87 @@ Contents
 |               | getattr()   | next()       |            |                |
 |               | globals()   |
 
+___
+# abs()
+---
+<table>
+  <tr>
+    <th>Use Case</th>
+    <th>Python Code</th>
+  </tr>
+  <tr>
+    <td>Find the absolute value of a given number</td>
+    <td><pre>num = -10
+abs_num = abs(num)
+print(abs_num) # Output: 10</pre></td>
+  </tr>
+  <tr>
+    <td>Calculate the distance between two numbers on a number line</td>
+    <td><pre>num1 = 10
+num2 = 20
+distance = abs(num1 - num2)
+print(distance) # Output: 10</pre></td>
+  </tr>
+  <tr>
+    <td>Determine the magnitude or amplitude of a vector in physics</td>
+    <td><pre>import cmath
 
-| #  | Use Case                                                                                               | Python Code                                                                                                                                                                                                                                      |
-|----|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | Find the absolute value of a given number                                                              | ```python <br/>"num = -10<br/>abs_num = abs(num)<br/>print(abs_num) # Output: 10"<br/>```                                                                                                                                                        |
-| 2  | Calculate the distance between two numbers on a number line                                            | ```python <br/>"num1 = 10<br/>num2 = 20<br/>distance = abs(num1 - num2)<br/>print(distance) # Output: 10"<br/>```                                                                                                                                |
-| 3  | Determine the magnitude or amplitude of a vector in physics                                            | ```python <br/>"import cmath<br/><br/>vector = 3 + 4j<br/>magnitude = abs(vector)<br/>print(magnitude) # Output: 5.0"<br/>```                                                                                                                    |
-| 4  | Calculate the difference between two values without considering their signs                            | ```python <br/>"a = 20<br/>b = -30<br/>difference = abs(a - b)<br/>print(difference) # Output: 50"<br/>```                                                                                                                                       |
-| 5  | Normalize data by converting negative values to positive values                                        | ```python <br/>"data = [1, -2, 3, -4, 5]<br/>normalized_data = [abs(x) for x in data]<br/>print(normalized_data) # Output: [1, 2, 3, 4, 5]"<br/>```                                                                                              |
-| 6  | Calculate the modulus or remainder of a number without considering its sign                            | ```python <br/>"num = -10<br/>divisor = 3<br/>modulus = abs(num) % divisor<br/>print(modulus) # Output: 1"<br/>```                                                                                                                               |
-| 7  | Convert a complex number to its magnitude or modulus                                                   | ```python <br/>"complex_num = 2 + 3j<br/>magnitude = abs(complex_num)<br/>print(magnitude) # Output: 3.605551275463989"<br/>```                                                                                                                  |
-| 8  | Determine the error or deviation of a measurement from its true value                                  | ```python <br/>"measurement = 10<br/>true_value = 15<br/>error = abs(measurement - true_value)<br/>print(error) # Output: 5"<br/>```                                                                                                             |
-| 9  | Calculate the absolute difference between two sets of data                                             | ```python <br/>"set1 = {1, 2, 3}<br/>set2 = {3, 4, 5}<br/>difference = abs(len(set1) - len(set2))<br/>print(difference) # Output: 2"<br/>```                                                                                                     |
-| 10 | Evaluate mathematical expressions involving absolute values, such as inequalities or distance formulas | ```python <br/>"a = 10<br/>b = 20<br/>if abs(a - b) >= 5:<br/>    print(""The absolute difference between a and b is greater than or equal to 5"")<br/>else:<br/>    print(""The absolute difference between a and b is less than 5"")"<br/>```  |
+vector = 3 + 4j
+magnitude = abs(vector)
+print(magnitude) # Output: 5.0</pre></td>
+  </tr>
+  <tr>
+    <td>Calculate the difference between two values without considering their signs</td>
+    <td><pre>a = 20
+b = -30
+difference = abs(a - b)
+print(difference) # Output: 50</pre></td>
+  </tr>
+  <tr>
+    <td>Normalize data by converting negative values to positive values</td>
+    <td><pre>data = [1, -2, 3, -4, 5]
+normalized_data = [abs(x) for x in data]
+print(normalized_data) # Output: [1, 2, 3, 4, 5]</pre></td>
+  </tr>
+  <tr>
+    <td>Calculate the modulus or remainder of a number without considering its sign</td>
+    <td><pre>num = -10
+divisor = 3
+modulus = abs(num) % divisor
+print(modulus) # Output: 1</pre></td>
+  </tr>
+  <tr>
+    <td>Convert a complex number to its magnitude or modulus</td>
+    <td><pre>complex_num = 2 + 3j
+magnitude = abs(complex_num)
+print(magnitude) # Output: 3.605551275463989</pre></td>
+  </tr>
+  <tr>
+    <td>Determine the error or deviation of a measurement from its true value</td>
+    <td><pre>measurement = 10
+true_value = 15
+error = abs(measurement - true_value)
+print(error) # Output: 5</pre></td>
+  </tr>
+  <tr>
+    <td>Calculate the absolute difference between two sets of data</td>
+    <td><pre>set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+difference = abs(len(set1) - len(set2))
+print(difference) # Output: 2</pre></td>
+  </tr>
+  <tr>
+    <td>Evaluate mathematical expressions involving absolute values, such as inequalities or distance formulas</td>
+    <td><pre>a = 10
+b = 20
+if abs(a - b) >= 5:
+    print("The absolute difference between a and b is greater than or equal to 5")
+else:
+    print("The absolute difference between a and b is less than 5")</pre></td>
+  </tr>
+</table>
+
+
 ---
 <footer>
 <p style="float:left; width: 20%;">
