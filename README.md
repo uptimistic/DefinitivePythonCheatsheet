@@ -317,7 +317,100 @@ asyncio.run(my_coroutine())
  
 </table>
 
+
+___
+all() fucntion 
 ---
+<table border="2">	
+  <tr>
+    <th>#</th>
+    <th>Use Case</th>
+    <th>Python Code Example</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Iterating over an asynchronous generator:
+</td>
+    <td>
+
+```python  
+
+# Check if all elements in a list are greater than 0
+lst = [1, 2, 3, 4, 5]
+result = all(x > 0 for x in lst)
+print(result)  # True
+
+# Check if all elements in a tuple are even
+tup = (2, 4, 6, 8)
+result = all(x % 2 == 0 for x in tup)
+print(result)  # True
+
+# Check if all elements in a set are strings
+s = {'hello', 'world', 'python'}
+result = all(isinstance(x, str) for x in s)
+print(result)  # True
+
+
+```
+</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Checking if an iterable is empty: You can use ```all()``` to check if an iterable is empty. If the iterable is empty, ```all()``` returns ```True```. Otherwise, it returns ```False```. For example:
+
+</td>
+       <td>
+
+```python  
+
+# Check if a list is empty
+lst = []
+result = all(lst)
+print(result)  # True
+
+# Check if a tuple is empty
+tup = ()
+result = all(tup)
+print(result)  # True
+
+# Check if a set is empty
+s = set()
+result = all(s)
+print(result)  # True
+
+
+```
+</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Checking if a list of conditions is true: You can use ```all()``` to check if a list of conditions is true. For example:
+
+</td>
+       <td>
+
+```python  
+
+# Check if a number is positive, even, and a multiple of 4
+n = 8
+conditions = [n > 0, n % 2 == 0, n % 4 == 0]
+result = all(conditions)
+print(result)  # True
+
+# Check if a string is all lowercase and contains only letters
+s = 'hello'
+conditions = [s.islower(), s.isalpha()]
+result = all(conditions)
+print(result)  # True
+
+
+```
+</td>
+  </tr>
+ 
+</table>
+
+
 
 
 
