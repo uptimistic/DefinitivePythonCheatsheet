@@ -14,13 +14,13 @@
 ----------
 # Contents
 ----------
-**&nbsp;&nbsp;&nbsp;** Table of Contents : **&nbsp;** 	**[`0 : Introduction`](#Introduction)**__,__ 	**[`1 : Built-in Functions`](#Built-inFunctions)**__,__ 	**[`2 : Built-in Constants`](#Built-inConstants)**__,__ 	**[`3 : Built-in Types`](#Built-inTypes)**__,__ 	**[`4 : Built-in Exceptions`](#Built-inExceptions)**__,__ 	**[`5 : Text Processing Services`](#TextProcessingServices)**__,__ 	**[`6 : Binary Data Services`](#BinaryDataServices)**__,__ 	**[`7 : Data Types`](#DataTypes)**__,__ 	**[`8 : Numeric and Mathematical Modules`](#NumericandMathematicalModules)**__,__ 	**[`9 : Functional Programming Modules`](#FunctionalProgrammingModules)**__,__ 	**[`10 : File and Directory Access`](#FileandDirectoryAccess)**__,__ 	**[`11 : Data Persistence`](#DataPersistence)**__,__ 	**[`12 : Data Compression and Archiving`](#DataCompressionandArchiving)**__,__ 	**[`13 : File Formats`](#FileFormats)**__,__ 	**[`14 : Cryptographic Services`](#CryptographicServices)**__,__ 	**[`15 : Generic Operating System Services`](#GenericOperatingSystemServices)**__,__ 	**[`16 : Concurrent Execution`](#ConcurrentExecution)**__,__ 	**[`17 : Networking and Interprocess Communication`](#NetworkingandInterprocessCommunication)**__,__ 	**[`18 : Internet Data Handling`](#InternetDataHandling)**__,__ 	**[`19 : Structured Markup Processing Tools`](#StructuredMarkupProcessingTools)**__,__ 	**[`20 : Internet Protocols and Support`](#InternetProtocolsandSupport)**__,__ 	**[`21 : Multimedia Services`](#MultimediaServices)**__,__ 	**[`22 : Internationalization`](#Internationalization)**__,__ 	**[`23 : Program Frameworks`](#ProgramFrameworks)**__,__ 	**[`24 : Graphical User Interfaces with Tk`](#GraphicalUserInterfaceswithTk)**__,__ 	**[`25 : Development Tools`](#DevelopmentTools)**__,__ 	**[`26 : Debugging and Profiling`](#DebuggingandProfiling)**__,__ 	**[`27 : Software Packaging and Distribution`](#SoftwarePackagingandDistribution)**__,__ 	**[`28 : Python Runtime Services`](#PythonRuntimeServices)**__,__ 	**[`29 : Custom Python Interpreters`](#CustomPythonInterpreters)**__,__ 	**[`30 : Importing Modules`](#ImportingModules)**__,__ 	**[`31 : Python Language Services`](#PythonLanguageServices)**__,__ 	**[`32 : MS Windows Specific Services`](#MSWindowsSpecificServices)**__,__ 	**[`33 : Unix Specific Services`](#UnixSpecificServices)**__,__ 	**[`34 : Superseded Modules`](#SupersededModules)**__,__ 	**[`35 : Security Considerations`](#SecurityConsiderations)**__.__ 
+**&nbsp;&nbsp;&nbsp;** Table of Contents : **&nbsp;** **[`0 : Introduction`](#Introduction)**__,__ 	**[`1 : Built-in Functions`](#Built-inFunctions)**__,__ 	**[`2 : Built-in Constants`](#Built-inConstants)**__,__ 	**[`3 : Built-in Types`](#Built-inTypes)**__,__ 	**[`4 : Built-in Exceptions`](#Built-inExceptions)**__,__ 	**[`5 : Text Processing Services`](#TextProcessingServices)**__,__ 	**[`6 : Binary Data Services`](#BinaryDataServices)**__,__ 	**[`7 : Data Types`](#DataTypes)**__,__ 	**[`8 : Numeric and Mathematical Modules`](#NumericandMathematicalModules)**__,__ 	**[`9 : Functional Programming Modules`](#FunctionalProgrammingModules)**__,__ 	**[`10 : File and Directory Access`](#FileandDirectoryAccess)**__,__ 	**[`11 : Data Persistence`](#DataPersistence)**__,__ 	**[`12 : Data Compression and Archiving`](#DataCompressionandArchiving)**__,__ 	**[`13 : File Formats`](#FileFormats)**__,__ 	**[`14 : Cryptographic Services`](#CryptographicServices)**__,__ 	**[`15 : Generic Operating System Services`](#GenericOperatingSystemServices)**__,__ 	**[`16 : Concurrent Execution`](#ConcurrentExecution)**__,__ 	**[`17 : Networking and Interprocess Communication`](#NetworkingandInterprocessCommunication)**__,__ 	**[`18 : Internet Data Handling`](#InternetDataHandling)**__,__ 	**[`19 : Structured Markup Processing Tools`](#StructuredMarkupProcessingTools)**__,__ 	**[`20 : Internet Protocols and Support`](#InternetProtocolsandSupport)**__,__ 	**[`21 : Multimedia Services`](#MultimediaServices)**__,__ 	**[`22 : Internationalization`](#Internationalization)**__,__ 	**[`23 : Program Frameworks`](#ProgramFrameworks)**__,__ 	**[`24 : Graphical User Interfaces with Tk`](#GraphicalUserInterfaceswithTk)**__,__ 	**[`25 : Development Tools`](#DevelopmentTools)**__,__ 	**[`26 : Debugging and Profiling`](#DebuggingandProfiling)**__,__ 	**[`27 : Software Packaging and Distribution`](#SoftwarePackagingandDistribution)**__,__ 	**[`28 : Python Runtime Services`](#PythonRuntimeServices)**__,__ 	**[`29 : Custom Python Interpreters`](#CustomPythonInterpreters)**__,__ 	**[`30 : Importing Modules`](#ImportingModules)**__,__ 	**[`31 : Python Language Services`](#PythonLanguageServices)**__,__ 	**[`32 : MS Windows Specific Services`](#MSWindowsSpecificServices)**__,__ 	**[`33 : Unix Specific Services`](#UnixSpecificServices)**__,__ 	**[`34 : Superseded Modules`](#SupersededModules)**__,__ 	**[`35 : Security Considerations`](#SecurityConsiderations)**__.__ 
 
 ----------------
 # 0 : Introduction
 ----------------
 This is a comprehesive cheatsheet based on the official [Python Standard Library](https://docs.python.org/3/library/index.html).
-The aim is to offer users practical example implementation of the core Python.
+The aim is to offer users practical example implementation of the core Python language
 
 
 
@@ -62,7 +62,7 @@ need of the use of an import statement to invoke librarie(s)
 
 
 ___
-abs() fucntion implementation
+abs() fucntion 
 ---
 
 <table border="2">	
@@ -222,7 +222,103 @@ else:
   </tr>
 </table>
 
+___
+aiter() fucntion 
 ---
+
+  
+<table border="2">	
+  <tr>
+    <th>#</th>
+    <th>Use Case</th>
+    <th>Python Code Example</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Iterating over an asynchronous generator:
+</td>
+    <td>
+
+```python  
+
+async def async_gen():
+    for i in range(5):
+        await asyncio.sleep(1)
+        yield i
+
+async def my_coroutine():
+    async for i in asyncio.aiter(async_gen()):
+        print(i)
+
+asyncio.run(my_coroutine())
+
+```
+</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Iterating over an asynchronous iterable object that returns tasks:
+</td>
+       <td>
+
+```python  
+
+async def my_coroutine():
+    tasks = [asyncio.create_task(async_task(i)) for i in range(5)]
+    async for task in asyncio.aiter(tasks):
+        await task
+
+async def async_task(i):
+    await asyncio.sleep(1)
+    print(i)
+
+asyncio.run(my_coroutine())
+
+
+```
+</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Implementing a custom asynchronous iterable object:
+</td>
+       <td>
+
+```python  
+
+class MyAsyncIterable:
+    def __init__(self, start, stop):
+        self.start = start
+        self.stop = stop
+    
+    async def __aiter__(self):
+        self.current = self.start
+        return self
+    
+    async def __anext__(self):
+        if self.current < self.stop:
+            await asyncio.sleep(1)
+            result = self.current
+            self.current += 1
+            return result
+        else:
+            raise StopAsyncIteration
+
+async def my_coroutine():
+    async for i in asyncio.aiter(MyAsyncIterable(0, 5)):
+        print(i)
+
+asyncio.run(my_coroutine())
+
+
+```
+</td>
+  </tr>
+ 
+</table>
+
+---
+
 
 
 **&nbsp;&nbsp;&nbsp;** **2. Built-in Constants:** **&nbsp;** 
