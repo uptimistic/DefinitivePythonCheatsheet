@@ -20,7 +20,7 @@
 # 0 : Introduction
 ----------------
 This is a comprehesive cheatsheet based on the official [Python Standard Library](https://docs.python.org/3/library/index.html).
-The aim is to offer users practical example implementation 
+The aim is to offer users practical example implementation of the core Python functionality.
 
 
 
