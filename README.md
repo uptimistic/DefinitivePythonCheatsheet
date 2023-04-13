@@ -3,11 +3,9 @@
 #  Comprehensive Core Python Cheatsheet
 ---
 
-<sup>[Download Full Text](https://github.com/uptimistic/ComputerProgramming/blob/main/DefinitivePythonCheatsheet.md), [Fork me on GitHub](https://github.com/uptimistic/ComputerProgramming) , [Connect via LinkedIn](https://www.linkedin.com/in/kwadwoadutwum/), [Connect via Columbia University Email](mailto:ka2526@columbia.edu), [Donate or Buy Coffee](https://ko-fi.com/optimistic)
+<sup> [Fork me on GitHub](https://github.com/uptimistic/ComputerProgramming) , [Connect via LinkedIn](https://www.linkedin.com/in/kwadwoadutwum/), [Columbia University Email](mailto:ka2526@columbia.edu), [Donate or Buy Coffee](https://ko-fi.com/optimistic)
 </sup>
 ---
-
-
 
 <p align="center">
   <img width="700" height="208" src="https://github.com/uptimistic/ComputerProgramming/blob/main/Python.png">
@@ -18,14 +16,27 @@
 ----------
 **&nbsp;&nbsp;&nbsp;** Table of Contents : **&nbsp;** 	**[`0 : Introduction`](#Introduction)**__,__ 	**[`1 : Built-in Functions`](#Built-inFunctions)**__,__ 	**[`2 : Built-in Constants`](#Built-inConstants)**__,__ 	**[`3 : Built-in Types`](#Built-inTypes)**__,__ 	**[`4 : Built-in Exceptions`](#Built-inExceptions)**__,__ 	**[`5 : Text Processing Services`](#TextProcessingServices)**__,__ 	**[`6 : Binary Data Services`](#BinaryDataServices)**__,__ 	**[`7 : Data Types`](#DataTypes)**__,__ 	**[`8 : Numeric and Mathematical Modules`](#NumericandMathematicalModules)**__,__ 	**[`9 : Functional Programming Modules`](#FunctionalProgrammingModules)**__,__ 	**[`10 : File and Directory Access`](#FileandDirectoryAccess)**__,__ 	**[`11 : Data Persistence`](#DataPersistence)**__,__ 	**[`12 : Data Compression and Archiving`](#DataCompressionandArchiving)**__,__ 	**[`13 : File Formats`](#FileFormats)**__,__ 	**[`14 : Cryptographic Services`](#CryptographicServices)**__,__ 	**[`15 : Generic Operating System Services`](#GenericOperatingSystemServices)**__,__ 	**[`16 : Concurrent Execution`](#ConcurrentExecution)**__,__ 	**[`17 : Networking and Interprocess Communication`](#NetworkingandInterprocessCommunication)**__,__ 	**[`18 : Internet Data Handling`](#InternetDataHandling)**__,__ 	**[`19 : Structured Markup Processing Tools`](#StructuredMarkupProcessingTools)**__,__ 	**[`20 : Internet Protocols and Support`](#InternetProtocolsandSupport)**__,__ 	**[`21 : Multimedia Services`](#MultimediaServices)**__,__ 	**[`22 : Internationalization`](#Internationalization)**__,__ 	**[`23 : Program Frameworks`](#ProgramFrameworks)**__,__ 	**[`24 : Graphical User Interfaces with Tk`](#GraphicalUserInterfaceswithTk)**__,__ 	**[`25 : Development Tools`](#DevelopmentTools)**__,__ 	**[`26 : Debugging and Profiling`](#DebuggingandProfiling)**__,__ 	**[`27 : Software Packaging and Distribution`](#SoftwarePackagingandDistribution)**__,__ 	**[`28 : Python Runtime Services`](#PythonRuntimeServices)**__,__ 	**[`29 : Custom Python Interpreters`](#CustomPythonInterpreters)**__,__ 	**[`30 : Importing Modules`](#ImportingModules)**__,__ 	**[`31 : Python Language Services`](#PythonLanguageServices)**__,__ 	**[`32 : MS Windows Specific Services`](#MSWindowsSpecificServices)**__,__ 	**[`33 : Unix Specific Services`](#UnixSpecificServices)**__,__ 	**[`34 : Superseded Modules`](#SupersededModules)**__,__ 	**[`35 : Security Considerations`](#SecurityConsiderations)**__.__ 
 
+----------------
 # 0 : Introduction
 ----------------
 This is a comprehesive cheatsheet based on the official [Python Standard Library](https://docs.python.org/3/library/index.html).
 The aim is to offer users practical example implementation 
 
 
-# 1 : Built-in Functions
-----------------------
+
+----------------
+# 1. Built-in Functions:
+----------------
+Python built-in functions and exceptions are programming 
+objects that can be used by all Python code without the 
+need of the use of an import statement to invoke librarie(s)
+ and module(s).
+
+---
+**&nbsp;&nbsp;&nbsp;** **1. Built-in Functions:** **&nbsp;** 	**[`A :`](#A)**__,__ **[`abs()`](#abs())**__,__ **[`aiter()`](#aiter())**__,__ 	**[`all()`](#all())**__,__ **[`any()`](#any())**__,__  **[`anext()`](#anext())**__,__ 	**[`ascii()`](#ascii())**__,__ 	**[`B`](#B)**__,__ **[`bin()`](#bin())**__,__ 	**[`bool()`](#bool())**__,__ 	**[`breakpoint()`](#breakpoint())**__,__ 	**[`bytearray()`](#bytearray())**__,__ 	**[`bytes()`](#bytes())**__,__ 	**[`C`](#C)**__,__ 	**[`callable()`](#callable())**__,__ **[`chr()`](#chr())**__,__ 	**[`classmethod()`](#classmethod())**__,__ 	**[`compile()`](#compile())**__,__ 	**[`complex()`](#complex())**__,__ **[`D`](#D)**__,__ 	**[`delattr()`](#delattr())**__,__ 	**[`dict()`](#dict())**__,__ 	**[`dir()`](#dir())**__,__ 	**[`divmod()`](#divmod())**__,__ 	**[`E`](#E)**__,__ 	**[`enumerate()`](#enumerate())**__,__ 	**[`eval()`](#eval())**__,__ 	**[`exec()`](#exec())**__,__ 	**[`F`](#F)**__,__ 	**[`filter()`](#filter())**__,__ 	**[`float()`](#float())**__,__ 	**[`format()`](#format())**__,__ 	**[`frozenset()`](#frozenset())**__,__ 	**[`G`](#G)**__,__ 	**[`getattr()`](#getattr())**__,__ 	**[`globals()`](#globals())**__,__ 	**[`H`](#H)**__,__ 	**[`hasattr()`](#hasattr())**__,__ 	**[`hash()`](#hash())**__,__ 	**[`help()`](#help())**__,__ 	**[`hex()`](#hex())**__,__ 	**[`I`](#I)**__,__ 	**[`id()`](#id())**__,__ 	**[`input()`](#input())**__,__ 	**[`int()`](#int())**__,__ 	**[`isinstance()`](#isinstance())**__,__ 	**[`issubclass()`](#issubclass())**__,__ 	**[`iter()`](#iter())**__,__ 	**[`L`](#L)**__,__ 	**[`len()`](#len())**__,__ 	**[`list()`](#list())**__,__ 	**[`locals()`](#locals())**__,__ 	**[`M`](#M)**__,__ 	**[`map()`](#map())**__,__ 	**[`max()`](#max())**__,__ 	**[`memoryview()`](#memoryview())**__,__ 	**[`min()`](#min())**__,__ 	**[`N`](#N)**__,__ 	**[`next()`](#next())**__,__ 	**[`O`](#O)**__,__ 	**[`object()`](#object())**__,__ 	**[`oct()`](#oct())**__,__ 	**[`open()`](#open())**__,__ 	**[`ord()`](#ord())**__,__ 	**[`P`](#P)**__,__ 	**[`pow()`](#pow())**__,__ 	**[`print()`](#print())**__,__ 	**[`property()`](#property())**__,__ 	**[`R`](#R)**__,__ 	**[`range()`](#range())**__,__ 	**[`repr()`](#repr())**__,__ 	**[`reversed()`](#reversed())**__,__ 	**[`round()`](#round())**__,__ 	**[`S`](#S)**__,__ 	**[`set()`](#set())**__,__ 	**[`setattr()`](#setattr())**__,__ 	**[`slice()`](#slice())**__,__ 	**[`sorted()`](#sorted())**__,__ 	**[`staticmethod()`](#staticmethod())**__,__ 	**[`str()`](#str())**__,__ 	**[`sum()`](#sum())**__,__ 	**[`super()`](#super())**__,__ 	**[`T`](#T)**__,__ 	**[`tuple()`](#tuple())**__,__ 	**[`type()`](#type())**__,__ 	**[`V`](#V)**__,__ 	**[`vars()`](#vars())**__,__ 	**[`Z`](#Z)**__,__ 	**[`zip()`](#zip())**__,__ 	**[`__import__()`](#__import__())**__.__ 
+
+ Built-in Functions List 
+-----------------------
 
 | A                   | D                 | I                  | O                | S                    |
 |---------------------|-------------------|--------------------|------------------|----------------------|
@@ -51,20 +62,23 @@ The aim is to offer users practical example implementation
 
 
 ___
-# abs()
+abs() fucntion implementation
 ---
 <table>
   <tr>
+    <th>#</th>
     <th>Use Case</th>
-    <th>Python Code</th>
+    <th>Python Code Example</th>
   </tr>
   <tr>
+    <td>1</td>
     <td>Find the absolute value of a given number</td>
     <td><pre>num = -10
 abs_num = abs(num)
 print(abs_num) # Output: 10</pre></td>
   </tr>
   <tr>
+    <td>2</td>
     <td>Calculate the distance between two numbers on a number line</td>
     <td><pre>num1 = 10
 num2 = 20
@@ -72,14 +86,16 @@ distance = abs(num1 - num2)
 print(distance) # Output: 10</pre></td>
   </tr>
   <tr>
+    <td>3</td>
     <td>Determine the magnitude or amplitude of a vector in physics</td>
     <td><pre>import cmath
-
 vector = 3 + 4j
 magnitude = abs(vector)
 print(magnitude) # Output: 5.0</pre></td>
+
   </tr>
   <tr>
+    <td>4</td>
     <td>Calculate the difference between two values without considering their signs</td>
     <td><pre>a = 20
 b = -30
@@ -87,12 +103,14 @@ difference = abs(a - b)
 print(difference) # Output: 50</pre></td>
   </tr>
   <tr>
+    <td>5</td>
     <td>Normalize data by converting negative values to positive values</td>
     <td><pre>data = [1, -2, 3, -4, 5]
 normalized_data = [abs(x) for x in data]
 print(normalized_data) # Output: [1, 2, 3, 4, 5]</pre></td>
   </tr>
   <tr>
+    <td>6</td>
     <td>Calculate the modulus or remainder of a number without considering its sign</td>
     <td><pre>num = -10
 divisor = 3
@@ -100,12 +118,14 @@ modulus = abs(num) % divisor
 print(modulus) # Output: 1</pre></td>
   </tr>
   <tr>
+    <td>7</td>
     <td>Convert a complex number to its magnitude or modulus</td>
     <td><pre>complex_num = 2 + 3j
 magnitude = abs(complex_num)
 print(magnitude) # Output: 3.605551275463989</pre></td>
   </tr>
   <tr>
+    <td>8</td>
     <td>Determine the error or deviation of a measurement from its true value</td>
     <td><pre>measurement = 10
 true_value = 15
@@ -113,6 +133,7 @@ error = abs(measurement - true_value)
 print(error) # Output: 5</pre></td>
   </tr>
   <tr>
+    <td>9</td>
     <td>Calculate the absolute difference between two sets of data</td>
     <td><pre>set1 = {1, 2, 3}
 set2 = {3, 4, 5}
@@ -120,6 +141,7 @@ difference = abs(len(set1) - len(set2))
 print(difference) # Output: 2</pre></td>
   </tr>
   <tr>
+    <td>10</td>
     <td>Evaluate mathematical expressions involving absolute values, such as inequalities or distance formulas</td>
     <td><pre>a = 10
 b = 20
@@ -129,10 +151,9 @@ else:
     print("The absolute difference between a and b is less than 5")</pre></td>
   </tr>
 </table>
-
-
+  
 ---
-**&nbsp;&nbsp;&nbsp;** **1. Built-in Functions:** **&nbsp;** 	**[`A :`](#A)**__,__ **[`abs()`](#abs())**__,__ **[`aiter()`](#aiter())**__,__ 	**[`all()`](#all())**__,__ **[`any()`](#any())**__,__  **[`anext()`](#anext())**__,__ 	**[`ascii()`](#ascii())**__,__ 	**[`B`](#B)**__,__ **[`bin()`](#bin())**__,__ 	**[`bool()`](#bool())**__,__ 	**[`breakpoint()`](#breakpoint())**__,__ 	**[`bytearray()`](#bytearray())**__,__ 	**[`bytes()`](#bytes())**__,__ 	**[`C`](#C)**__,__ 	**[`callable()`](#callable())**__,__ **[`chr()`](#chr())**__,__ 	**[`classmethod()`](#classmethod())**__,__ 	**[`compile()`](#compile())**__,__ 	**[`complex()`](#complex())**__,__ **[`D`](#D)**__,__ 	**[`delattr()`](#delattr())**__,__ 	**[`dict()`](#dict())**__,__ 	**[`dir()`](#dir())**__,__ 	**[`divmod()`](#divmod())**__,__ 	**[`E`](#E)**__,__ 	**[`enumerate()`](#enumerate())**__,__ 	**[`eval()`](#eval())**__,__ 	**[`exec()`](#exec())**__,__ 	**[`F`](#F)**__,__ 	**[`filter()`](#filter())**__,__ 	**[`float()`](#float())**__,__ 	**[`format()`](#format())**__,__ 	**[`frozenset()`](#frozenset())**__,__ 	**[`G`](#G)**__,__ 	**[`getattr()`](#getattr())**__,__ 	**[`globals()`](#globals())**__,__ 	**[`H`](#H)**__,__ 	**[`hasattr()`](#hasattr())**__,__ 	**[`hash()`](#hash())**__,__ 	**[`help()`](#help())**__,__ 	**[`hex()`](#hex())**__,__ 	**[`I`](#I)**__,__ 	**[`id()`](#id())**__,__ 	**[`input()`](#input())**__,__ 	**[`int()`](#int())**__,__ 	**[`isinstance()`](#isinstance())**__,__ 	**[`issubclass()`](#issubclass())**__,__ 	**[`iter()`](#iter())**__,__ 	**[`L`](#L)**__,__ 	**[`len()`](#len())**__,__ 	**[`list()`](#list())**__,__ 	**[`locals()`](#locals())**__,__ 	**[`M`](#M)**__,__ 	**[`map()`](#map())**__,__ 	**[`max()`](#max())**__,__ 	**[`memoryview()`](#memoryview())**__,__ 	**[`min()`](#min())**__,__ 	**[`N`](#N)**__,__ 	**[`next()`](#next())**__,__ 	**[`O`](#O)**__,__ 	**[`object()`](#object())**__,__ 	**[`oct()`](#oct())**__,__ 	**[`open()`](#open())**__,__ 	**[`ord()`](#ord())**__,__ 	**[`P`](#P)**__,__ 	**[`pow()`](#pow())**__,__ 	**[`print()`](#print())**__,__ 	**[`property()`](#property())**__,__ 	**[`R`](#R)**__,__ 	**[`range()`](#range())**__,__ 	**[`repr()`](#repr())**__,__ 	**[`reversed()`](#reversed())**__,__ 	**[`round()`](#round())**__,__ 	**[`S`](#S)**__,__ 	**[`set()`](#set())**__,__ 	**[`setattr()`](#setattr())**__,__ 	**[`slice()`](#slice())**__,__ 	**[`sorted()`](#sorted())**__,__ 	**[`staticmethod()`](#staticmethod())**__,__ 	**[`str()`](#str())**__,__ 	**[`sum()`](#sum())**__,__ 	**[`super()`](#super())**__,__ 	**[`T`](#T)**__,__ 	**[`tuple()`](#tuple())**__,__ 	**[`type()`](#type())**__,__ 	**[`V`](#V)**__,__ 	**[`vars()`](#vars())**__,__ 	**[`Z`](#Z)**__,__ 	**[`zip()`](#zip())**__,__ 	**[`__import__()`](#__import__())**__.__ 
+
 
 **&nbsp;&nbsp;&nbsp;** **2. Built-in Constants:** **&nbsp;** 
 
