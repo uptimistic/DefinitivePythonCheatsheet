@@ -356,7 +356,7 @@ print(result)  # True
 </tr>
 <tr>
     <td>2</td>
-    <td>Checking if an iterable is empty: You can use ```all()``` to check if an iterable is empty. If the iterable is empty, ```all()``` returns ```True```. Otherwise, it returns ```False```. For example:
+    <td>Checking if an iterable is empty: You can use <code>all()</code> to check if an iterable is empty. If the iterable is empty, <code>all()</code> returns <code>True</code>. Otherwise, it returns <code>False</code>. For example:
 
 </td>
        <td>
@@ -384,7 +384,7 @@ print(result)  # True
   </tr>
   <tr>
     <td>3</td>
-    <td>Checking if a list of conditions is true: You can use ```all()``` to check if a list of conditions is true. For example:
+    <td>Checking if a list of conditions is true: You can use <code>all</code> to check if a list of conditions is true. For example:
 
 </td>
        <td>
