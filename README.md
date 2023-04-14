@@ -110,7 +110,7 @@ print(distance) # Output: 10
 import cmath
 vector = 3 + 4j
 magnitude = abs(vector)
-print(magnitude) # Output: 5.0</pre></td>
+print(magnitude) # Output: 5.0
 
 ```
 </td>
@@ -410,7 +410,18 @@ print(result)  # True
  
 </table>
 
-
+___
+any() fucntion 
+---
+| # | Use Case                                                  | Python Code Example                                                                                           |
+|---|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| 1 | Check if any element in a list is True                     | ```my_list = [False, False, True, False]```<br>```result = any(my_list)```<br>```print(result) # Output: True``` |
+| 2 | Check if any character in a string is a digit              | ```my_string = "Hello, world! 123"```<br>```result = any(char.isdigit() for char in my_string)```<br>```print(result) # Output: True``` |
+| 3 | Check if any element in a tuple satisfies a condition      | ```my_tuple = (1, 2, 3, 4, 5)```<br>```result = any(x > 3 for x in my_tuple)```<br>```print(result) # Output: True``` |
+| 4 | Check if any key in a dictionary is True                   | ```my_dict = {'a': False, 'b': False, 'c': True}```<br>```result = any(my_dict.values())```<br>```print(result) # Output: True``` |
+| 5 | Check if any file in a directory has a specific extension  | ```import os```<br>```dir_path = "/path/to/directory"```<br>```extension = ".txt"```<br>```result = any(file.endswith(extension) for file in os.listdir(dir_path))```<br>```print(result)``` |
+| 6 | Check if any element in a set is True                      | ```my_set = {False, False, True}```<br>```result = any(my_set)```<br>```print(result) # Output: True``` |
+| 7 | Check if any element in a range satisfies a condition      | ```my_range = range(1, 10)```<br>```result = any(x > 5 for x in my_range)```<br>```print(result) # Output: True``` |
 
 
 
