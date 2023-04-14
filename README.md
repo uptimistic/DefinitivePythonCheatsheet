@@ -438,18 +438,81 @@ print(result)  # True
  
 </table>
 
+<!-- 
+prompt : list all uses of the  python any() function and present the results in an html table of three columns labelled as #, Use Case,  Code Example. Use python language identifier to enable syntax highlighting in fenced code block  in the Code Example column
+-->
+
+
 ___
 any() fucntion 
 ---
-| # | Use Case                                                  | Python Code Example                                                                                           |
-|---|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| 1 | Check if any element in a list is True                     | ```my_list = [False, False, True, False]```<br>```result = any(my_list)```<br>```print(result) # Output: True``` |
-| 2 | Check if any character in a string is a digit              | ```my_string = "Hello, world! 123"```<br>```result = any(char.isdigit() for char in my_string)```<br>```print(result) # Output: True``` |
-| 3 | Check if any element in a tuple satisfies a condition      | ```my_tuple = (1, 2, 3, 4, 5)```<br>```result = any(x > 3 for x in my_tuple)```<br>```print(result) # Output: True``` |
-| 4 | Check if any key in a dictionary is True                   | ```my_dict = {'a': False, 'b': False, 'c': True}```<br>```result = any(my_dict.values())```<br>```print(result) # Output: True``` |
-| 5 | Check if any file in a directory has a specific extension  | ```import os```<br>```dir_path = "/path/to/directory"```<br>```extension = ".txt"```<br>```result = any(file.endswith(extension) for file in os.listdir(dir_path))```<br>```print(result)``` |
-| 6 | Check if any element in a set is True                      | ```my_set = {False, False, True}```<br>```result = any(my_set)```<br>```print(result) # Output: True``` |
-| 7 | Check if any element in a range satisfies a condition      | ```my_range = range(1, 10)```<br>```result = any(x > 5 for x in my_range)```<br>```print(result) # Output: True``` |
+
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Use Case</th>
+<th>Code Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Check if any element in a list is True</td>
+<td><code>my_list = [False, False, True, False]<br>result = any(my_list)<br>print(result) # Output: True</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Check if any character in a string is a digit</td>
+<td><code>my_string = "Hello, world! 123"<br>result = any(char.isdigit() for char in my_string)<br>print(result) # Output: True</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Check if any element in a tuple satisfies a condition</td>
+<td><code>my_tuple = (1, 2, 3, 4, 5)<br>result = any(x &gt; 3 for x in my_tuple)<br>print(result) # Output: True</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Check if any key in a dictionary is True</td>
+<td><code>my_dict = {'a': False, 'b': False, 'c': True}<br>result = any(my_dict.values())<br>print(result) # Output: True</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Check if any file in a directory has a specific extension</td>
+<td><code>import os<br>dir_path = "/path/to/directory"<br>extension = ".txt"<br>result = any(file.endswith(extension) for file in os.listdir(dir_path))<br>print(result)</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Check if any element in a set is True</td>
+<td><code>my_set = {False, False, True}<br>result = any(my_set)<br>print(result) # Output: True</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Check if any element in a range satisfies a condition</td>
+<td><code>my_range = range(1, 10)<br>result = any(x &gt; 5 for x in my_range)<br>print(result) # Output: True</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Check if any element in a list satisfies a condition</td>
+<td><code>any(x &gt; 5 for x in [1, 3, 6, 8])</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Check if any element in a tuple satisfies a condition</td>
+<td><code>any(x.startswith("a") for x in ("apple", "banana", "orange"))</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Check if any element in a set satisfies a condition</td>
+<td><code>any(len(x) == 3 for x in {"cat", "dog", "elephant"})</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Check if any element in a dictionary satisfies a condition</td>
+<td><code>any(value &gt; 10 for key, value in {"apple": 5, "banana": 12, "orange": 8}.items())</code></td>
+</tr>
+</table>
+
 
 
 
