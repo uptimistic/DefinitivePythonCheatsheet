@@ -1,12 +1,25 @@
 
+<sup> [Fork me on GitHub](https://github.com/uptimistic/ComputerProgramming) , [Connect via LinkedIn](https://www.linkedin.com/in/kwadwoadutwum/), [Columbia University Email](mailto:ka2526@columbia.edu), [Donate or Buy Coffee](https://ko-fi.com/optimistic)
+</sup>
+
+---
 ---
 #  Comprehensive Core Python Cheatsheet
 ---
+```mermaid
+flowchart LR
+    a[Python Language] --> b[Tutorial] --> c[Standard Library]
+    c-->d[Design Patterns]
+    c-->e[DS & Algorithms]
+    d-->f[Python Projects]
+    e-->f[Python Projects]
+```
+<!-- 
+side notes : anchor links for TOC and sections
 
-<sup> [Fork me on GitHub](https://github.com/uptimistic/ComputerProgramming) , [Connect via LinkedIn](https://www.linkedin.com/in/kwadwoadutwum/), [Columbia University Email](mailto:ka2526@columbia.edu), [Donate or Buy Coffee](https://ko-fi.com/optimistic)
-</sup>
+-->
+
 ---
-
 <p align="center">
   <img width="700" height="208" src="https://github.com/uptimistic/ComputerProgramming/blob/main/Python.png">
 </p>
