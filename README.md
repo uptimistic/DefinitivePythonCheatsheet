@@ -8,12 +8,26 @@
 ---
 ```mermaid
 flowchart LR
-    a[Python Language] --> b[Tutorial] --> c[Standard Library]
-    c-->d[Design Patterns]
-    c-->e[DS & Algorithms]
-    d-->f[Python Projects]
-    e-->f[Python Projects]
+
+classDef blue fill:#2196f3,stroke:#fff,stroke-width:2px;
+classDef green fill:#4caf50,stroke:#fff,stroke-width:2px;
+classDef yellow fill:#ffeb3b,stroke:#000,stroke-width:2px;
+classDef orange fill:#ff9800,stroke:#fff,stroke-width:2px;
+classDef red fill:#f44336,stroke:#fff,stroke-width:2px;
+classDef purple fill:#9c27b0,stroke:#fff,stroke-width:2px;
+
+ classDef white color:#022e1f,fill:#fff;
+
+
+      
+    a[Python Language]:::blue --> b[Tutorial]:::green --> c[Standard Library]:::yellow
+    c-->d[Design Patterns]:::orange
+    c-->e[DS & Algorithms]:::white
+    d-->f[Python Projects]:::purple
+    e-->f[Python Projects]:::purple
 ```
+
+
 <!-- 
 side notes : anchor links for TOC and sections
 
