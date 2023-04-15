@@ -459,62 +459,293 @@ any() fucntion
 <tr>
 <td>1</td>
 <td>Check if any element in a list is True</td>
-<td><code>my_list = [False, False, True, False]<br>result = any(my_list)<br>print(result) # Output: True</code></td>
+<td>
+
+
+
+```python
+my_list = [False, False, True, False]
+result = any(my_list)
+print(result) # Output: True
+
+```
+</td>
+
 </tr>
 <tr>
 <td>2</td>
 <td>Check if any character in a string is a digit</td>
-<td><code>my_string = "Hello, world! 123"<br>result = any(char.isdigit() for char in my_string)<br>print(result) # Output: True</code></td>
+<td>
+
+
+
+```python
+my_string = "Hello, world! 123"
+result = any(char.isdigit() for char in my_string)
+print(result) # Output: True
+```
+</td>
+
 </tr>
 <tr>
 <td>3</td>
 <td>Check if any element in a tuple satisfies a condition</td>
-<td><code>my_tuple = (1, 2, 3, 4, 5)<br>result = any(x &gt; 3 for x in my_tuple)<br>print(result) # Output: True</code></td>
+<td>
+
+
+
+```python
+my_tuple = (1, 2, 3, 4, 5)
+result = any(x > 3 for x in my_tuple)
+print(result) # Output: True
+```
+</td>
+
 </tr>
 <tr>
 <td>4</td>
 <td>Check if any key in a dictionary is True</td>
-<td><code>my_dict = {'a': False, 'b': False, 'c': True}<br>result = any(my_dict.values())<br>print(result) # Output: True</code></td>
+<td>
+
+
+
+```python
+my_dict = {'a': False, 'b': False, 'c': True}
+result = any(my_dict.values())
+print(result) # Output: True
+```
+</td>
+
 </tr>
 <tr>
 <td>5</td>
 <td>Check if any file in a directory has a specific extension</td>
-<td><code>import os<br>dir_path = "/path/to/directory"<br>extension = ".txt"<br>result = any(file.endswith(extension) for file in os.listdir(dir_path))<br>print(result)</code></td>
+<td>
+
+
+
+```python
+import os
+dir_path = "/path/to/directory"
+extension = ".txt"
+result = any(file.endswith(extension) for file in os.listdir(dir_path))
+print(result)
+```
+</td>
+
 </tr>
 <tr>
 <td>6</td>
 <td>Check if any element in a set is True</td>
-<td><code>my_set = {False, False, True}<br>result = any(my_set)<br>print(result) # Output: True</code></td>
+<td>
+
+
+
+```python
+
+my_set = {False, False, True}
+result = any(my_set)
+print(result) # Output: True
+```
+</td>
+
 </tr>
 <tr>
 <td>7</td>
 <td>Check if any element in a range satisfies a condition</td>
-<td><code>my_range = range(1, 10)<br>result = any(x &gt; 5 for x in my_range)<br>print(result) # Output: True</code></td>
+<td>
+
+
+
+```python
+my_range = range(1, 10)
+result = any(x > 5 for x in my_range)
+print(result) # Output: True
+```
+</td>
+
 </tr>
 <tr>
 <td>8</td>
 <td>Check if any element in a list satisfies a condition</td>
-<td><code>any(x &gt; 5 for x in [1, 3, 6, 8])</code></td>
+<td>
+
+
+
+```python
+any(x > 5 for x in [1, 3, 6, 8])
+```
+</td>
+
 </tr>
 <tr>
 <td>9</td>
 <td>Check if any element in a tuple satisfies a condition</td>
-<td><code>any(x.startswith("a") for x in ("apple", "banana", "orange"))</code></td>
+<td>
+
+
+
+```python
+any(x.startswith("a") for x in ("apple", "banana", "orange"))
+```
+</td>
+
 </tr>
 <tr>
 <td>10</td>
 <td>Check if any element in a set satisfies a condition</td>
-<td><code>any(len(x) == 3 for x in {"cat", "dog", "elephant"})</code></td>
+<td>
+
+
+
+```python
+any(len(x) == 3 for x in {"cat", "dog", "elephant"})
+```
+</td>
+
 </tr>
 <tr>
 <td>11</td>
 <td>Check if any element in a dictionary satisfies a condition</td>
-<td><code>any(value &gt; 10 for key, value in {"apple": 5, "banana": 12, "orange": 8}.items())</code></td>
+<td>
+
+
+```python
+any(value > 10 for key, value in {"apple": 5, "banana": 12, "orange": 8}.items())
+```
+</td>
+
 </tr>
 </table>
 
 
 
+___
+ascii() fucntion 
+---
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Use Case</th>
+      <th>Python Code Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Convert a string to its ASCII representation</td>
+      <td><pre><code>my_string = "hello world"
+result = ascii(my_string)
+print(result) # Output: "'hello world'"</code></pre></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Convert non-ASCII characters to their escape sequence equivalents</td>
+      <td><pre><code>my_string = "Héllo Wôrld"
+result = ascii(my_string)
+print(result) # Output: "'H\\xe9llo W\\xf4rld'"</code></pre></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Get the ASCII representation of a character</td>
+      <td><pre><code>my_char = 'A'
+result = ascii(my_char)
+print(result) # Output: "'A'"</code></pre></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Get the ASCII representation of a non-ASCII character</td>
+      <td><pre><code>my_char = 'é'
+result = ascii(my_char)
+print(result) # Output: "'\\xe9'"</code></pre></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Get the ASCII representation of a number</td>
+      <td><pre><code>my_number = 42
+result = ascii(my_number)
+print(result) # Output: '42'</code></pre></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Get the ASCII representation of a list</td>
+      <td><pre><code>my_list = ['hello', 'world']
+result = ascii(my_list)
+print(result) # Output: "['hello', 'world']"</code></pre></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Get the ASCII representation of a tuple</td>
+      <td><pre><code>my_tuple = ('hello', 'world')
+result = ascii(my_tuple)
+print(result) # Output: "('hello', 'world')"</code></pre></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Get the ASCII representation of a dictionary</td>
+      <td><pre><code>my_dict = {'hello': 'world'}
+result = ascii(my_dict)
+print(result) # Output: "{'hello': 'world'}"</code></pre></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Get the ASCII representation of a set</td>
+      <td><pre><code>my_set = {'hello', 'world'}
+result = ascii(my_set)
+print(result) # Output: "{'hello', 'world'}"</code></pre></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Get the ASCII representation of a complex number</td>
+      <td><code>my_complex = complex(1,2)<br>result = ascii(my_complex)<br>print(result) # Output: '(1+2j)'</code></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Return a string containing a printable representation of an object, but escape non-ASCII characters</td>
+      <td><code>my_string = "Héllo, Wörld!"<br>result = ascii(my_string)<br>print(result) # Output: "'H\\xe9llo, W\\xf6rld!'"</code></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Return a string representation of an object in ASCII format</td>
+      <td><code>my_object = {'a': 1, 'b': 2}<br>result = ascii(my_object)<br>print(result) # Output: "{'a': 1, 'b': 2}"</code></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Return an ASCII-encoded version of a Unicode string</td>
+      <td><code>my_unicode_string = "Héllo, Wörld!"<br>result = my_unicode_string.encode('ascii', 'ignore')<br>print(result) # Output: b'Hello, World!'</code></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Return a string containing only ASCII characters</td>
+      <td><code>my_string = "Héllo, Wörld!"<br>result = my_string.encode('ascii', 'ignore').decode()<br>print(result) # Output: "Hello, World!"</code></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Return a string containing a printable representation of an object, but escape non-ASCII characters</td>
+      <td><code>my_string = "Héllo, Wörld!"<br>result = ascii(my_string)<br>print(result) # Output: "'H\\xe9llo, W\\xf6rld!'"</code></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Return a string representation of an object in ASCII format</td>
+      <td><code>my_object = {'a': 1, 'b': 2}<br>result = ascii(my_object)<br>print(result) # Output: "{'a': 1, 'b': 2}"</code></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Return an ASCII-encoded version of a Unicode string</td>
+      <td><code>my_unicode_string = "Héllo, Wörld!"<br>result = my_unicode_string.encode('ascii', 'ignore')<br>print(result) # Output: b'Hello, World!'</code></td>
+    </tr>
+       <tr>
+      <td>18</td>
+      <td>Return a string containing only ASCII characters</td>
+      <td><code>my_string = "Héllo, Wörld!"<br>result = my_string.encode('ascii', 'ignore').decode()<br>print(result) # Output: "Hello, World!"</code></td>
+    </tr>
+    </table>
+    
+    
+    
+    
 
 **&nbsp;&nbsp;&nbsp;** **2. Built-in Constants:** **&nbsp;** 
 
