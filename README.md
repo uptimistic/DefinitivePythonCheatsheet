@@ -20,12 +20,14 @@ classDef purple fill:#9c27b0,stroke:#fff,stroke-width:2px;
 
 
       
-    a[Python Language]:::blue --> b[Tutorial]:::green --> c[Standard Library]:::yellow
-    c-->d[Design Patterns]:::orange
+    a[Python Language]:::blue --> b[Tutorial]:::green --> c[Standard Library]:::purple
+    c-->d[Design Patterns]:::white
     c-->e[DS & Algorithms]:::white
     d-->f[Python Projects]:::purple
     e-->f[Python Projects]:::purple
 ```
+
+
 
 
 
