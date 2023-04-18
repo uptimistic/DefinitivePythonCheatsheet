@@ -442,6 +442,9 @@ print(result)  # True
 
 <!-- 
 prompt : list all uses of the  python any() function and present the results in an html table of three columns labelled as #, Use Case,  Code Example. Use python language identifier to enable syntax highlighting in fenced code block  in the Code Example column
+
+make an html table with all uses cases of the python bin() function with code examples . dont use pre  tag, br tag  and code tag. Wrap code examples in "```python" before the code block and "```" after the code block for optimized GitHub README.md file. present the entire results in a copiable  text . write each line of code in the code block on a separate line and do not use br tag
+
 -->
 
 
