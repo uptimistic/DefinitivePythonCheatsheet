@@ -625,7 +625,6 @@ any(value > 10 for key, value in {"apple": 5, "banana": 12, "orange": 8}.items()
 ___
 ascii() fucntion 
 ---
-
 <table>
   <thead>
     <tr>
@@ -637,116 +636,189 @@ ascii() fucntion
   <tbody>
     <tr>
       <td>1</td>
-      <td>Convert a string to its ASCII representation</td>
-      <td><pre><code>my_string = "hello world"
-result = ascii(my_string)
-print(result) # Output: "'hello world'"</code></pre></td>
+      <td>Check if a string contains any non-ASCII characters</td>
+      <td>
+ 
+```python    
+my_string = "Hello, world! 😊"
+result = all(ord(char) < 128 for char in my_string)
+print(result) # Output: False
+```
+</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>Convert non-ASCII characters to their escape sequence equivalents</td>
-      <td><pre><code>my_string = "Héllo Wôrld"
-result = ascii(my_string)
-print(result) # Output: "'H\\xe9llo W\\xf4rld'"</code></pre></td>
+      <td>Check if a string contains only ASCII characters</td>
+      <td>
+ 
+```python     
+my_string = "Hello, world!"
+result = all(ord(char) < 128 for char in my_string)
+print(result) # Output: True
+```
+</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>Get the ASCII representation of a character</td>
-      <td><pre><code>my_char = 'A'
-result = ascii(my_char)
-print(result) # Output: "'A'"</code></pre></td>
+      <td>Convert a byte string containing non-ASCII characters to ASCII</td>
+      <td>
+ 
+```python    
+my_bytes = b"Hello, world! \xe2\x98\x83"
+result = my_bytes.decode('ascii', 'ignore')
+print(result) # Output: b"Hello, world! "
+```
+</td>
     </tr>
     <tr>
       <td>4</td>
-      <td>Get the ASCII representation of a non-ASCII character</td>
-      <td><pre><code>my_char = 'é'
-result = ascii(my_char)
-print(result) # Output: "'\\xe9'"</code></pre></td>
+      <td>Convert a bytes object to its ASCII representation</td>
+      <td>
+ 
+```python    
+my_bytes = b"Hello, world! \xe2\x98\x83"
+result = ascii(my_bytes)
+print(result) # Output: b'Hello, world! \\xe2\\x98\\x83'
+```
+</td>
     </tr>
     <tr>
       <td>5</td>
-      <td>Get the ASCII representation of a number</td>
-      <td><pre><code>my_number = 42
-result = ascii(my_number)
-print(result) # Output: '42'</code></pre></td>
+      <td>Convert a dictionary containing non-ASCII keys to ASCII</td>
+      <td>
+ 
+```python    
+my_dict = {'møøse': 'funny', 'spam': 'eggs'}
+result = ascii(my_dict)
+print(result) # Output: "{'m\\xf8\\xf8se': 'funny', 'spam': 'eggs'}"
+```
+</td>
     </tr>
     <tr>
       <td>6</td>
-      <td>Get the ASCII representation of a list</td>
-      <td><pre><code>my_list = ['hello', 'world']
-result = ascii(my_list)
-print(result) # Output: "['hello', 'world']"</code></pre></td>
+      <td>Convert a set containing non-ASCII characters to ASCII</td>
+      <td>
+ 
+```python    
+my_set = {'møøse', 'spam'}
+result = ascii(my_set)
+print(result) # Output: "{'m\\xf8\\xf8se', 'spam'}"
+```
+</td>
     </tr>
     <tr>
       <td>7</td>
-      <td>Get the ASCII representation of a tuple</td>
-      <td><pre><code>my_tuple = ('hello', 'world')
-result = ascii(my_tuple)
-print(result) # Output: "('hello', 'world')"</code></pre></td>
+      <td>Convert a string containing non-ASCII characters to ASCII</td>
+      <td>
+ 
+```python    
+my_string = "Hello, world! 😊"
+result = ascii(my_string)
+print(result) # Output: "'Hello, world! \\U0001f60a'"
+```
+</td>
     </tr>
     <tr>
       <td>8</td>
-      <td>Get the ASCII representation of a dictionary</td>
-      <td><pre><code>my_dict = {'hello': 'world'}
-result = ascii(my_dict)
-print(result) # Output: "{'hello': 'world'}"</code></pre></td>
+      <td>Convert a string to its ASCII representation</td>
+      <td>
+ 
+```python    
+my_string = "Hello, world!"
+result = ascii(my_string)
+print(result) # Output: "'Hello, world!'"
+```
+</td>
     </tr>
     <tr>
       <td>9</td>
-      <td>Get the ASCII representation of a set</td>
-      <td><pre><code>my_set = {'hello', 'world'}
-result = ascii(my_set)
-print(result) # Output: "{'hello', 'world'}"</code></pre></td>
+      <td>Check if a string contains any non-ASCII characters</td>
+      <td>
+ 
+```python    
+my_string = "Hello, world! ±"
+result = any(ord(char) > 127 for char in my_string)
+print(result) # Output: True
+```
+</td>
     </tr>
     <tr>
       <td>10</td>
-      <td>Get the ASCII representation of a complex number</td>
-      <td><code>my_complex = complex(1,2)<br>result = ascii(my_complex)<br>print(result) # Output: '(1+2j)'</code></td>
+      <td>Check if a string contains only ASCII characters</td>
+      <td>
+ 
+```python    
+my_string = "Hello, world!"
+result = all(ord(char) < 128 for char in my_string)
+print(result) # Output: True
+```
+</td>
     </tr>
     <tr>
       <td>11</td>
-      <td>Return a string containing a printable representation of an object, but escape non-ASCII characters</td>
-      <td><code>my_string = "Héllo, Wörld!"<br>result = ascii(my_string)<br>print(result) # Output: "'H\\xe9llo, W\\xf6rld!'"</code></td>
+      <td>Convert a byte string containing non-ASCII characters to ASCII</td>
+      <td>
+ 
+```python    
+my_bytes = b'Hello, world! ±'
+result = my_bytes.decode('ascii', 'ignore')
+print(result) # Output: b'Hello, world! '
+```
+</td>
     </tr>
     <tr>
       <td>12</td>
-      <td>Return a string representation of an object in ASCII format</td>
-      <td><code>my_object = {'a': 1, 'b': 2}<br>result = ascii(my_object)<br>print(result) # Output: "{'a': 1, 'b': 2}"</code></td>
+      <td>Convert a bytes object to its ASCII representation</td>
+      <td>
+ 
+```python    
+my_bytes = b'Hello, world!'
+result = ascii(my_bytes)
+print(result) # Output: b'Hello, world!'
+```
+</td>
     </tr>
     <tr>
       <td>13</td>
-      <td>Return an ASCII-encoded version of a Unicode string</td>
-      <td><code>my_unicode_string = "Héllo, Wörld!"<br>result = my_unicode_string.encode('ascii', 'ignore')<br>print(result) # Output: b'Hello, World!'</code></td>
+      <td>Convert a dictionary containing non-ASCII keys to ASCII</td>
+      <td>
+ 
+```python    
+my_dict = {'Héllo': 'world'}
+      
+   result = {ascii(key): value for key, value in my_dict.items()}
+print(result) # Output: {'H\\xe9llo': 'world'}
+```
+</td>
     </tr>
     <tr>
       <td>14</td>
-      <td>Return a string containing only ASCII characters</td>
-      <td><code>my_string = "Héllo, Wörld!"<br>result = my_string.encode('ascii', 'ignore').decode()<br>print(result) # Output: "Hello, World!"</code></td>
+      <td>Convert a set containing non-ASCII characters to ASCII</td>
+      <td>
+ 
+```python    
+my_set = {'Héllo', 'wörld'}
+result = set(ascii(char) for char in my_set)
+print(result) # Output: {'H\\xe9llo', 'w\\xf6rld'}
+```
+</td>
     </tr>
     <tr>
       <td>15</td>
-      <td>Return a string containing a printable representation of an object, but escape non-ASCII characters</td>
-      <td><code>my_string = "Héllo, Wörld!"<br>result = ascii(my_string)<br>print(result) # Output: "'H\\xe9llo, W\\xf6rld!'"</code></td>
+      <td>Convert a string containing non-ASCII characters to ASCII</td>
+      <td>
+ 
+```python    
+my_string = "Héllo, wörld!"
+result = ascii(my_string)
+print(result) # Output: 'H\\xe9llo, w\\xf6rld!'
+```
+</td>
     </tr>
-    <tr>
-      <td>16</td>
-      <td>Return a string representation of an object in ASCII format</td>
-      <td><code>my_object = {'a': 1, 'b': 2}<br>result = ascii(my_object)<br>print(result) # Output: "{'a': 1, 'b': 2}"</code></td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>Return an ASCII-encoded version of a Unicode string</td>
-      <td><code>my_unicode_string = "Héllo, Wörld!"<br>result = my_unicode_string.encode('ascii', 'ignore')<br>print(result) # Output: b'Hello, World!'</code></td>
-    </tr>
-       <tr>
-      <td>18</td>
-      <td>Return a string containing only ASCII characters</td>
-      <td><code>my_string = "Héllo, Wörld!"<br>result = my_string.encode('ascii', 'ignore').decode()<br>print(result) # Output: "Hello, World!"</code></td>
-    </tr>
-    </table>
+  </body>
+  <table>    
     
-    
-    
+
     
 
 **&nbsp;&nbsp;&nbsp;** **2. Built-in Constants:** **&nbsp;** 
