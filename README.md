@@ -1302,7 +1302,6 @@ value = True
 result = str(value)
 print(result) # Output: 'True'
 ```
-  ```
 
   </td>
   
