@@ -94,6 +94,50 @@ need of the use of an import statement to invoke librarie(s)
 ___
 abs() fucntion 
 ---
+The ```abs()``` function in Python returns the absolute value of a given number. The absolute value of a number is the distance of the number from zero, regardless of whether the number is positive or negative. The syntax for using the abs() function is as follows:
+
+python
+Copy code
+abs(x)
+where x is the number for which you want to find the absolute value.
+
+Here are some examples of using the abs() function:
+
+```python
+print(abs(5))      # Output: 5
+print(abs(-5))     # Output: 5
+print(abs(0))      # Output: 0
+print(abs(3.14))   # Output: 3.14
+print(abs(-3.14))  # Output: 3.14
+```
+
+As you can see from the examples, the abs() function works with both integers and floating-point numbers.
+
+If you try to pass a non-numeric value to the abs() function, you will get a TypeError:
+
+```python
+
+print(abs('hello'))  
+# Output: TypeError: bad operand type for abs(): 'str'
+
+```
+
+
+```python
+c = 5 + 3j
+print(abs(c))
+
+# Output: 5.830951894845301
+
+```
+In this example, we have assigned a complex number 5 + 3j to the variable c. When we call the ```abs()``` function with the parameter c, the function returns the magnitude of the complex number, which is calculated as the square root of the sum of the squares of the real and imaginary parts. Therefore, the output is 5.830951894845301.
+
+
+In summary, the ```abs()``` function is a built-in Python function that returns the absolute value of a number. It is a useful function for finding the distance of a number from zero, regardless of whether the number is positive or negative.
+
+Below are examples of the abs() funtion :
+
+---
 
 <table border="2">	
   <tr>
