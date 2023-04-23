@@ -135,8 +135,8 @@ In this example, we have assigned a complex number 5 + 3j to the variable c. Whe
 
 In summary, the ```abs()``` function is a built-in Python function that returns the absolute value of a number. It is a useful function for finding the distance of a number from zero, regardless of whether the number is positive or negative.
 
-Below are examples of the abs() funtion :
-
+---
+Below are representative use case examples of the abs() funtion :
 ---
 
 <table border="2">	
@@ -299,7 +299,52 @@ else:
 ___
 aiter() fucntion 
 ---
+The ```aiter()``` function is a built-in Python function that returns an asynchronous iterator object. It is used to create an asynchronous generator that produces values asynchronously.
 
+An asynchronous iterator is an object that implements the ```__aiter__()``` and ```__anext__()``` methods. The ```__aiter__()``` method returns the asynchronous iterator object itself, while the ```__anext__()``` method returns a coroutine that produces the next value in the asynchronous sequence.
+
+Here's an example of how to use the ```aiter() ```function:
+
+```python
+async def my_async_generator():
+    for i in range(5):
+        await asyncio.sleep(1) # wait for 1 second
+        yield i
+
+async def main():
+    async for i in aiter(my_async_generator()):
+        print(i)
+
+await main()
+```
+
+In this example, ```my_async_generator()``` is an asynchronous generator that produces values asynchronously using the yield statement. The async for loop iterates over the asynchronous generator by calling the ```__anext__()``` method to get the next value in the sequence.
+
+The ```aiter()``` function is used to create an asynchronous iterator object from the asynchronous generator object returned by ```my_async_generator()```. This allows the async for loop to iterate over the asynchronous sequence produced by the generator.
+
+
+When you call aiter() on an iterable object, it returns an asynchronous iterator object that can be used with an async for loop to iterate over the values asynchronously. Here's an example:
+
+```python
+import asyncio
+
+async def my_coroutine():
+    async for item in aiter(my_iterable):
+        print(item)
+
+asyncio.run(my_coroutine())
+```
+
+In this example, my_iterable is an iterable object, and aiter() returns an asynchronous iterator object that we can use to iterate over the values in my_iterable asynchronously. The async for loop is used to iterate over the values in the asynchronous iterator, and the print() function is used to output each value as it is encountered.
+
+Note that the ```aiter()``` function can also be used with other types of asynchronous iterators, such as asynchronous generators and asynchronous iterables.
+
+Overall, the ```aiter()``` function is a powerful tool for working with asynchronous sequences in Python, allowing you to easily create and iterate over asynchronous iterators and generators.
+
+
+---
+Below are representative use case examples of the aiter() funtion :
+---
   
 <table border="2">	
   <tr>
